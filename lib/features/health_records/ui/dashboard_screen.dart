@@ -47,7 +47,7 @@ class DashboardScreen extends StatelessWidget {
                 ),
                 _circularSummaryItem(
                   icon: Icons.local_fire_department,
-                  value: "120 kcal", // update later with today's calories
+                  value: "120 kcal", 
                   color: caloriesColor,
                 ),
                 _circularSummaryItem(
@@ -60,7 +60,6 @@ class DashboardScreen extends StatelessWidget {
 
             const SizedBox(height: 30),
 
-            /// ARTICLES TITLE
             Text(
               "Articles",
               style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
@@ -122,7 +121,7 @@ class DashboardScreen extends StatelessWidget {
     );
   }
 
-  /// ARTICLE CARD
+
   Widget _articleCard(
     BuildContext context, {
     required String title,
@@ -159,7 +158,6 @@ class DashboardScreen extends StatelessWidget {
     );
   }
 
-  /// POP-UP DIALOG
   void _showArticlePopup(BuildContext context, String title, String content) {
     showDialog(
       context: context,
@@ -189,11 +187,9 @@ class DashboardScreen extends StatelessWidget {
                 ),
               ),
 
-              // Content with scroll indicator
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(16, 16, 24, 16),
-                  // extra right padding for scroll indicator
                   child: Scrollbar(
                     thumbVisibility: true,
                     child: SingleChildScrollView(
@@ -210,7 +206,6 @@ class DashboardScreen extends StatelessWidget {
                 ),
               ),
 
-              // Close button
               Align(
                 alignment: Alignment.bottomRight,
                 child: TextButton(

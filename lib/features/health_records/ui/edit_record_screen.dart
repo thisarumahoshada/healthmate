@@ -36,7 +36,7 @@ class _EditRecordScreenState extends State<EditRecordScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: accentColor,
-        iconTheme: const IconThemeData(color: Colors.white), // back arrow white
+        iconTheme: const IconThemeData(color: Colors.white), 
         title: const Text(
           "Edit Health Record",
           style: TextStyle(
@@ -54,7 +54,7 @@ class _EditRecordScreenState extends State<EditRecordScreen> {
 
             const SizedBox(height: 20),
 
-            // Steps
+            
             CustomTextField(
   controller: stepsCtrl,
   label: "Steps",
@@ -65,7 +65,7 @@ class _EditRecordScreenState extends State<EditRecordScreen> {
 
             const SizedBox(height: 20),
 
-            // Calories
+            
             CustomTextField(
   controller: caloriesCtrl,
   label: "Calories",
@@ -76,7 +76,7 @@ class _EditRecordScreenState extends State<EditRecordScreen> {
 
             const SizedBox(height: 20),
 
-            // Water
+            
             CustomTextField(
   controller: waterCtrl,
   label: "Water (ml)",

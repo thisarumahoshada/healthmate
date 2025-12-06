@@ -9,7 +9,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   final provider = HealthRecordProvider();
-  await provider.loadRecords(); // load SQLite data on startup
+  await provider.loadRecords(); 
 
   runApp(HealthMateApp(provider: provider));
 }

@@ -68,20 +68,14 @@ class HealthRecordDB {
 
   Future<int> updateRecord(HealthRecord record) async {
     final db = await instance.database;
-    return await db.update(
-      'health_records',
-      record.toMap(),
-      where: 'id = ?',
-      whereArgs: [record.id],
+    return await db.update('health_records',record.toMap(),
+      where: 'id = ?', whereArgs: [record.id],
     );
   }
 
   Future<int> deleteRecord(int id) async {
     final db = await instance.database;
-    return await db.delete(
-      'health_records',
-      where: 'id = ?',
-      whereArgs: [id],
+    return await db.delete('health_records', where: 'id = ?',whereArgs: [id],
     );
   }
 }

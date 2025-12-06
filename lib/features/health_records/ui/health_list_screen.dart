@@ -35,7 +35,7 @@ class _HealthListScreenState extends State<HealthListScreen> {
 
       body: Column(
         children: [
-          // 🔍 MODERN SEARCH BAR
+          
           Padding(padding: const EdgeInsets.all(12.0), child: _searchBar()),
 
           Expanded(
@@ -89,7 +89,7 @@ class _HealthListScreenState extends State<HealthListScreen> {
                           trailing: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              // EDIT
+                              
                               IconButton(
                                 icon: const Icon(Icons.edit),
                                 onPressed: () {
@@ -103,7 +103,7 @@ class _HealthListScreenState extends State<HealthListScreen> {
                                 },
                               ),
 
-                              // DELETE
+                              
                               IconButton(
                                 icon: const Icon(
                                   Icons.delete,

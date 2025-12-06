@@ -124,18 +124,18 @@ Widget _inputField({
       labelText: label,
       prefixIcon: Icon(icon, color: color),
 
-      // Default border when disabled
+      
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(14),
       ),
 
-      // Border when not focused
+     
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(14),
         borderSide: BorderSide(color: lightGray, width: 2),
       ),
 
-      // Border when focused
+      
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(14),
         borderSide: BorderSide(color: color, width: 2),
